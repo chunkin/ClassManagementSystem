@@ -62,7 +62,7 @@
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.addToolStripMenuItem.Text = "Add";
+            this.addToolStripMenuItem.Text = "Query";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addUserMenuItem_Click);
             // 
             // orgnizationManagementToolStripMenuItem
@@ -77,13 +77,13 @@
             // deparrtmentToolStripMenuItem
             // 
             this.deparrtmentToolStripMenuItem.Name = "deparrtmentToolStripMenuItem";
-            this.deparrtmentToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deparrtmentToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.deparrtmentToolStripMenuItem.Text = "Deparrtment";
             // 
             // classToolStripMenuItem
             // 
             this.classToolStripMenuItem.Name = "classToolStripMenuItem";
-            this.classToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.classToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.classToolStripMenuItem.Text = "Class";
             // 
             // MainForm
@@ -93,9 +93,11 @@
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(837, 584);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

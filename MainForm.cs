@@ -18,7 +18,12 @@ namespace ClassManagementSystem
 
         private void addUserMenuItem_Click(object sender, EventArgs e)
         {
+           
+            Form childForm = new UMForm();
 
+            childForm.MdiParent = this;
+            childForm.Show();
+            childForm.Activate();
         }
     }
 }

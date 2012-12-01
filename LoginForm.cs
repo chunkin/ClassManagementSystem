@@ -31,7 +31,7 @@ namespace ClassManagementSystem
 
         private bool IsAdmin(string username, string password)
         {
-            var connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\chunkin\Documents\Visual Studio 2010\Projects\ClassManagementSystem\cmsdb\cmsdb.accdb;Persist Security Info=False;";
+            var connectionString = DbConn.connString;
             var connection = new OleDbConnection(connectionString);
             connection.Open();
             string query = String.Format("select count(*) from users where username='{0}' and password='{1}'", username, password);
